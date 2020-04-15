@@ -44,7 +44,7 @@ export class AppComponent  {
       this.star += this.line;
     }
     this.temp--;
-    if(i < data1){
+    if(l < data1){
       this.enol += this.lmao;
       this.result += this.star;
       this.result +=this.enol;
