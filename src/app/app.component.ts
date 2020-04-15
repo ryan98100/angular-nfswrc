@@ -38,7 +38,7 @@ export class AppComponent  {
   }
   else{
   this.pola = "Pola A";
-  for(var i=0;i<data2;i++){
+  for(var l=0;l<data2;l++){
     this.star="";
     for(var j=this.temp;j>0;j--){
       this.star += this.line;
@@ -65,6 +65,5 @@ export class AppComponent  {
   reset(){
     this.result="";
     this.htmlstring="";
-    this.a='';
   }
 }
