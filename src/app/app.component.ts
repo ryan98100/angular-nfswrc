@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  min="";
+  max="";
   input1="";
   input2="";
   pola="";
@@ -37,14 +39,24 @@ export class AppComponent  {
   this.line="*";
   }
   else{
+  if(data1>data2){
+    this.min=data2;
+    this.max=data1;
+    this.temp=data2;
+  }
+  else{
+    this.min=data1;
+    this.max=data2;
+    this.temp=data1;
+  }
   this.pola = "Pola A";
-  for(var l=0;l<data2;l++){
+  for(var l=0;l<parseInt(this.max);l++){
     this.star="";
     for(var j=this.temp;j>0;j--){
       this.star += this.line;
     }
     this.temp--;
-    if(l < data1){
+    if(l < parseInt(this.min)){
       this.enol += this.lmao;
       this.result += this.star;
       this.result +=this.enol;
@@ -60,6 +72,8 @@ export class AppComponent  {
   this.enol="";
   this.lmao="o";
   this.line="*";
+  this.min="";
+  this.max="";
   }
   }
   reset(){
