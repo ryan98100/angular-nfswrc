@@ -42,12 +42,12 @@ export class AppComponent  {
   if(data1>data2){
     this.min=data2;
     this.max=data1;
-    this.temp=data2;
+    this.temp=data1;
   }
   else{
     this.min=data1;
     this.max=data2;
-    this.temp=data1;
+    this.temp=data2;
   }
   this.pola = "Pola A";
   for(var l=0;l<parseInt(this.max);l++){
