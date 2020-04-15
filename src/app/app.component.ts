@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  input1="";
+  input2="";
+  data=0;
+  output="Hasil: ";
+  hitung(){
+  this.data = parseInt(this.input1) * parseInt(this.input2);
+  this.output += this.data;
+  }
+
 }
