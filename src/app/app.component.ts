@@ -27,7 +27,7 @@ export class AppComponent  {
   for(var o=0;o<data2-1;o++){
    this.line += "*";
   }
-  for(var i=data1;i<this.data;i++){
+  for(var i=data2;i<=this.data;i++){
     this.result+= this.line;
     this.result += "<br>";
     this.line+= "*";
@@ -65,5 +65,6 @@ export class AppComponent  {
   reset(){
     this.result="";
     this.htmlstring="";
+    this.a='';
   }
 }
