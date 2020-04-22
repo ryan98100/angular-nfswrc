@@ -20,6 +20,8 @@ export class AppComponent  {
   enol="";
   lmao="0";
   temp=0;
+  a : String;
+  b : String;
   hitung(data1,data2){
   this.htmlstring="";
   this.temp= data2;
@@ -79,5 +81,7 @@ export class AppComponent  {
   reset(){
     this.result="";
     this.htmlstring="";
+    this.a = "";
+    this.b = "";
   }
 }
